@@ -1,9 +1,12 @@
-### ChallangeWebDriverIo - Bitso Challange  
+## ChallangeWebDriverIo - Bitso   
 
 
-#### Steps to run the project
-[x] npm init wdio .
-[x] Fill the configuration for WDIO Configuration Helper
+## Steps to run the project
+ Run the next command in ../ChallangeWebDriverIo/Config
+
+ 	npm init wdio .
+ 
+ Fill the configuration for WDIO Configuration Helper
 
     ? Where is your automation backend located? On my local machine
 	? Which framework do you want to use? jasmine    
@@ -15,7 +18,8 @@
 	? Do you want to add a service to your test setup? chromedriver
 	? What is the base url? (http://localhost)
 
-[x] Run test commands
+Run test cases 
+ 
 	npx wdio ./wdio.conf.js --spec transaction-exceeds-your-limit.js
 	npx wdio ./wdio.conf.js --spec InvalidPin.js
 
