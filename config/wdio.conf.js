@@ -140,7 +140,6 @@ exports.config = {
     // Options to be passed to Jasmine.
     jasmineOpts: {
         // Jasmine default timeout
-        timeout: process.env.DEBUG === 'true' ? 999999 : 60000,
         defaultTimeoutInterval: 60000,
         //
         // The Jasmine framework allows interception of each assertion in order to log the state of the application

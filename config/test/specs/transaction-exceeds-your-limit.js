@@ -5,47 +5,47 @@ const WalletPage = require('../pageobjects/wallet.page');
 describe('Scenario 1: Verify error message - "transaction exceeds your limit" ', () => {
     it('should try a deposit with BTC coin, and validate limit account massage', async () => {
         await LoginPage.open("login");
-        await LoginPage.login('xdsanzxd@gmail.com', '6671445882fxF!');
-        await userKnowledgePage.skipUserKnowledgeModal();
-        await WalletPage.selectCoin("btc");
-        await WalletPage.clickOnBtnDeposit();
+        await LoginPage.Login('xdsanzxd@gmail.com', '6671445882fxF!');
+        await userKnowledgePage.SkipUserKnowledgeModal();
+        await WalletPage.SelectCoin("btc");
+        await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.validateDepositModal();
+        await WalletPage.CalidateDepositModal();
     });
 
     it('should try a deposit with ETH coin, and validate limit account massage', async () => {
-        await WalletPage.selectCoin("eth");
-        await WalletPage.clickOnBtnDeposit();
+        await WalletPage.SelectCoin("eth");
+        await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.validateDepositModal();
+        await WalletPage.ValidateDepositModal();
     });    
 
     it('should try a deposit with BCH coin, and validate limit account massage', async () => {
-        await WalletPage.selectCoin("bch");
-        await WalletPage.clickOnBtnDeposit();
+        await WalletPage.SelectCoin("bch");
+        await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.validateDepositModal();
+        await WalletPage.ValidateDepositModal();
     });
 
     it('should try a deposit with DAI coin, and validate limit account massage', async () => {
-        await WalletPage.selectCoin("dai");
-        await WalletPage.clickOnBtnDeposit();
+        await WalletPage.SelectCoin("dai");
+        await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.validateDepositModal();
+        await WalletPage.ValidateDepositModal();
     });    
 
     it('should try a deposit with XRP coin, and validate limit account massage', async () => {
-        await WalletPage.selectCoin("xrp");
-        await WalletPage.clickOnBtnDeposit();
+        await WalletPage.SelectCoin("xrp");
+        await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.validateDepositModal();
+        await WalletPage.ValidateDepositModal();
     });
 
     it('should try a deposit with MANA coin, and validate limit account massage', async () => {
-        await WalletPage.selectCoin("mana");
-        await WalletPage.clickOnBtnDeposit();
+        await WalletPage.SelectCoin("mana");
+        await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.validateDepositModal();
+        await WalletPage.ValidateDepositModal();
     });    
         
 });
