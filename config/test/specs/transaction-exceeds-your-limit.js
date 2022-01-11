@@ -10,7 +10,7 @@ describe('Scenario 1: Verify error message - "transaction exceeds your limit" ',
         await WalletPage.SelectCoin("btc");
         await WalletPage.ClickOnBtnDeposit();
         await WalletPage.TransferType("BitsoTransfer");
-        await WalletPage.CalidateDepositModal();
+        await WalletPage.ValidateDepositModal();
     });
 
     it('should try a deposit with ETH coin, and validate limit account massage', async () => {

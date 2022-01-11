@@ -26,12 +26,10 @@ class BeneficiariesPage extends Page {
         return $("//button[normalize-space()='Confirm']");
     }
     get dropDownRelationship() {
-        return $(
-            "//div[@class='styles__Wrapper-sc-6qm6qf-6 gLhA-DK']//div[@class='css-16ljna5']"
-        );
+        return $("//div[@class='styles__Wrapper-sc-6qm6qf-6 gLhA-DK']//div[@class='css-16ljna5']");
     }
     get txtErrorPin() {
-        return $("//div[@class='styles__Message-a4dq6g-2 ebgnCy']");
+        return $("//div[@type='error']");
     }
     get txtGotIt() {
         return $("//button[normalize-space()='Got it']");
@@ -96,7 +94,7 @@ class BeneficiariesPage extends Page {
 
     async VerifyErrorPinMessage(message) {
         let elem = await $("//div[@type='error']").getText();
-        await expect(elem).toHaveText(message);
+        expect(elem).toEqual(message);
     }
 }
 
