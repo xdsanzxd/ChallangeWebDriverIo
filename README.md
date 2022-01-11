@@ -1,4 +1,4 @@
-## ChallangeWebDriverIo - Bitso   
+## ChallengeWebDriverIo - Bitso   
 
 
 ## Steps to run the project
